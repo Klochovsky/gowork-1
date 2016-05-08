@@ -5,7 +5,7 @@
     <title>Pierwszy program w JS</title>
     <meta charset="utf-8" />
     <style>
-        #errorlogin #errorpass {
+        #errorlogin, #errorpass, #errorRegulamin {
             color: red;
         }
     </style>
@@ -19,6 +19,9 @@
         <label>Hasło</label>
         <input type="text" name="pass" placeholder="Podaj haslo"/>
         <p id="errorpass"></p>
+        <label>Akceptacja nowgo regulaminu</label>
+        <input type="checkbox" name="zgoda" />
+        <p id="errorRegulamin"></p>
         <button onclick="check(); return false;">Zaloguj</button>
     </form>
     <script src="js/program.js"></script>

@@ -6,21 +6,13 @@ function check() {
 
     var login = document.forms.formularz.login.value;
     var pass = document.forms.formularz.pass.value;
+    var zgoda = document.forms.formularz.zgoda.checked;
 
     var komunikatLogin = document.getElementById('errorlogin');
     var komunikatPass = document.getElementById('errorpass');
+    var komunikatRegulamin = document.getElementById('errorRegulamin');
 
     var blad = false;
-
-
-
-
-
-
-
-
-
-
 
     if((login == "") && (pass == "")){
         komunikatLogin.innerHTML = "Nie podałeś loginu !";
@@ -33,6 +25,13 @@ function check() {
     }else if (pass == "") {
         komunikatPass.innerHTML = "Nie podałeś hasła !";
         komunikatLogin.innerHTML = "";
+        blad = true;
+    }
+
+    if(zgoda){
+        komunikatRegulamin.innerHTML = "";
+    }else{
+        komunikatRegulamin.innerHTML = "Musisz zaaakceptowac nowy regulamin";
         blad = true;
     }
 
