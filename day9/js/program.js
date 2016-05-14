@@ -38,8 +38,10 @@ function check() {
     if (blad) {
         // sa bledy blad = TRUE
     }else{
+        var liczba = Number(login);
+        window.alert(liczba * liczba);
         //submit wysyla dane
-         formularz.submit();
+         //formularz.submit();
     }
 
 }
