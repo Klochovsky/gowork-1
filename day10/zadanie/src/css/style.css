@@ -1,0 +1,27 @@
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+#logo{
+    background: url(../img/logo.png);
+    position: relative;
+    top: 50px;
+    left: 200px;
+    width: 200px;
+    height: 80px;
+}
+header{
+    background: url(../img/misio.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    
+}
+header > h1{
+    font-family: Raleway;
+    font-size: 200px;
+    color: #ffffff;
+    position: relative;
+    top: 387px;
+    left: 708px;
+}
