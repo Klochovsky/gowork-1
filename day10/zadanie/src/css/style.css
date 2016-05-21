@@ -15,7 +15,15 @@ header{
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
+    max-height: 58;
+    min-height: 58
     
+    
+}
+header.main{
+    background: url(images/Layer-6.jpg);
+    background-repeat: no-repeat;
+    background-origin: c
 }
 header > h1{
     font-family: Raleway;
